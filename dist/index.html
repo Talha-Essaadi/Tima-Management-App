@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time managemment App</title>
+        <link rel="stylesheet" href="/src/output.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+<!---->
+        <div class="container-1 w-full  pl-[20px] pr-[20px]">
+            <header class="h-[106px] w-full flex items-center">
+                <div class="left-header w-full flex gap-[16px] items-center ">
+                    <img class="w-[55px] h-[55px]"
+                        src="/dist/images/Rectangle.png" alt="profile picture">
+                    <div class="user-name flex flex-col gap-[0px]">
+                        <h1 class="text-1-white">Good morning</h1>
+                        <h1 class="task-tilte">Alisia</h1>
+                    </div>
+                </div> <!-- left header-->
+                <div class="right-header">
+                    <div class="notification relative">
+                        <div
+                            class="circle w-[11px] h-[11px] rounded-full absolute top-[5px] left-[22px]">
+                        </div>
+                        <div class="icon-notificarion">
+                            <svg class="notification-svg w-[39px] h-[39px]"
+                                xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px"
+                                fill="#1b1e3f"><path
+                                    d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" /></svg>
+                        </div>
+                    </div>
+                </div> <!-- right header-->
+            </header>
+            <div class="date w-full h-[66px] pl-[20px] pr-[109px] flex">
+                <div class="today w-full">
+                    <h1 class="primary-text-1">Today</h1>
+                    <h1 class="task-tilte">Monday 23 Jan</h1>
+                </div>
+                <div class="timing w-[150px]">
+                    <h1 class="primary-text-1">Now</h1>
+                    <h1 class="task-tilte ">11:16 AM</h1>
+                </div>
+            </div><!-- date -->
+            <div class="search w-full flex justify-center h-[87px] pt-[10px] ">
+                <div
+                    class="search-background w-full h-[40px] rounded-[10px] flex items-center pl-[20px] gap-[6px]">
+                    <svg class="search-icon pt-[2px]"
+                        xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px"
+                        fill="#FF9120"><path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" /></svg>
+                    <h1 class="primary-text">Search by events, tasks and
+                        people</h1>
+                </div>
+            </div><!-- Search -->
+            <div class="scroll-containers w-full flex flex-col gap-[16px]">
+                <div class="scroll-title w-full flex">
+                    <h1 class="Primary-title w-full">Upcoming event</h1>
+                    <svg class="edit-icon" xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1b1e3f"><path
+                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h357l-80 80H200v560h560v-278l80-80v358q0 33-23.5 56.5T760-120H200Zm280-360ZM360-360v-170l367-367q12-12 27-18t30-6q16 0 30.5 6t26.5 18l56 57q11 12 17 26.5t6 29.5q0 15-5.5 29.5T897-728L530-360H360Zm481-424-56-56 56 56ZM440-440h56l232-232-28-28-29-28-231 231v57Zm260-260-29-28 29 28 28 28-28-28Z" /></svg>
+                </div>
+                <div class="scroll w-full flex gap-[12px]">
+                    <div
+                        class="scroll-container-1 w-[323px] h-[159px] flex flex-col justify-evenly  pr-[20px] pl-[20px] rounded-[20px]">
+                        <div class="scroll-top h-[48px] flex items-start ">
+                            <div class="scroll-top-right flex gap-[13px] w-full">
+                                <div class="square w-[40px] h-[40px] rounded-[10px] bg-white"></div>
+                                <div class="text mt-[-6px] ">
+                                    <h1 class="task-tilte">Purrweb daily</h1>
+                                    <h1 class="primary-text-1">11:30 AM - 12:30 AM</h1>
+
+                                </div>
+                            </div>
+                            <div class="Online h-[30px] w-[95px] flex justify-center items-center  rounded-[20px] ">
+                                <h1 class="text-1-white">Online</h1>
+                            </div>
+                           
+                        </div><!-- scroll-top -->
+                        <div class="text w-full">
+                            <h1 class="primary-text-1">Discussion of the new project</h1>
+                        </div>
+                        <div class="scroll-bottom w-full flex gap-[12px]">
+                            <div class="link-1 w-[157px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                                <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                                <h1 class="primary-text-white">Link to the meeting</h1>
+                            </div>
+                            <div class="link-1 w-[127px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                                <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                                <h1 class="primary-text-white">For discussion</h1>
+                            </div>
+                        </div>
+                    </div><!-- scroll container 1  -->
+                    <div
+                    class="scroll-container-1 w-[323px] h-[159px] flex flex-col justify-evenly  pr-[20px] pl-[20px] rounded-[20px]">
+                    <div class="scroll-top h-[48px] flex items-start ">
+                        <div class="scroll-top-right flex gap-[13px] w-full">
+                            <div class="square w-[40px] h-[40px] rounded-[10px] bg-white"></div>
+                            <div class="text mt-[-6px] ">
+                                <h1 class="task-tilte">Purrweb daily</h1>
+                                <h1 class="primary-text-1">11:30 AM - 12:30 AM</h1>
+
+                            </div>
+                        </div>
+                        <div class="Online h-[30px] w-[95px] flex justify-center items-center  rounded-[20px] ">
+                            <h1 class="text-1-white">Online</h1>
+                        </div>
+                       
+                    </div><!-- scroll-top -->
+                    <div class="text w-full">
+                        <h1 class="primary-text-1">Discussion of the new project</h1>
+                    </div>
+                    <div class="scroll-bottom w-full flex gap-[12px]">
+                        <div class="link-1 w-[157px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                            <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                            <h1 class="primary-text-white">Link to the meeting</h1>
+                        </div>
+                        <div class="link-1 w-[127px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                            <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                            <h1 class="primary-text-white">For discussion</h1>
+                        </div>
+                    </div>
+                </div><!-- scroll container 1  -->
+                <div
+                class="scroll-container-1 w-[323px] h-[159px] flex flex-col justify-evenly  pr-[20px] pl-[20px] rounded-[20px]">
+                <div class="scroll-top h-[48px] flex items-start ">
+                    <div class="scroll-top-right flex gap-[13px] w-full">
+                        <div class="square w-[40px] h-[40px] rounded-[10px] bg-white"></div>
+                        <div class="text mt-[-6px] ">
+                            <h1 class="task-tilte">Purrweb daily</h1>
+                            <h1 class="primary-text-1">11:30 AM - 12:30 AM</h1>
+
+                        </div>
+                    </div>
+                    <div class="Online h-[30px] w-[95px] flex justify-center items-center  rounded-[20px] ">
+                        <h1 class="text-1-white">Online</h1>
+                    </div>
+                   
+                </div><!-- scroll-top -->
+                <div class="text w-full">
+                    <h1 class="primary-text-1">Discussion of the new project</h1>
+                </div>
+                <div class="scroll-bottom w-full flex gap-[12px]">
+                    <div class="link-1 w-[157px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                        <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                        <h1 class="primary-text-white">Link to the meeting</h1>
+                    </div>
+                    <div class="link-1 w-[127px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                        <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                        <h1 class="primary-text-white">For discussion</h1>
+                    </div>
+                </div>
+            </div><!-- scroll container 1  -->
+            <div
+            class="scroll-container-1 w-[323px] h-[159px] flex flex-col justify-evenly  pr-[20px] pl-[20px] rounded-[20px]">
+            <div class="scroll-top h-[48px] flex items-start ">
+                <div class="scroll-top-right flex gap-[13px] w-full">
+                    <div class="square w-[40px] h-[40px] rounded-[10px] bg-white"></div>
+                    <div class="text mt-[-6px] ">
+                        <h1 class="task-tilte">Purrweb daily</h1>
+                        <h1 class="primary-text-1">11:30 AM - 12:30 AM</h1>
+
+                    </div>
+                </div>
+                <div class="Online h-[30px] w-[95px] flex justify-center items-center  rounded-[20px] ">
+                    <h1 class="text-1-white">Online</h1>
+                </div>
+               
+            </div><!-- scroll-top -->
+            <div class="text w-full">
+                <h1 class="primary-text-1">Discussion of the new project</h1>
+            </div>
+            <div class="scroll-bottom w-full flex gap-[12px]">
+                <div class="link-1 w-[157px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                    <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                    <h1 class="primary-text-white">Link to the meeting</h1>
+                </div>
+                <div class="link-1 w-[127px] h-[27px] flex items-center rounded-[5px] gap-[5px]">
+                    <div class="square w-[27px] h-[27px] rounded-[5px] bg-white"></div>
+                    <h1 class="primary-text-white">For discussion</h1>
+                </div>
+            </div>
+        </div><!-- scroll container 1  -->
+                </div><!-- scroll -->
+            </div><!-- scroll containers -->
+
+            <div class="my-tasks w-full pt-[38px]">
+                <div class="my-tasks-top w-full flex">
+                    <div class="my-tasks-title w-full flex items-center gap-[15px]">
+                        <h1 class="Primary-title">My tasks </h1>
+                        <h1 class="see-all-text">16</h1>
+                    </div>
+                    <h1 class="see-all-text w-[55px] ">See all</h1>
+                </div>
+
+                <div class="tasks flex flex-col gap-[13px]">
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-done-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="done-task-title ">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="sub-done-task-title">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="sub-done-task-title">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-done -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="task-tilte">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="primary-text-1">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="primary-text-1">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-1 -->
+
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-done-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="done-task-title ">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="sub-done-task-title">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="sub-done-task-title">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-done -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="task-tilte">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="primary-text-1">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="primary-text-1">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-1 -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-done-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="done-task-title ">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="sub-done-task-title">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="sub-done-task-title">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-done -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="task-tilte">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="primary-text-1">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="primary-text-1">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-1 -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-done-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="done-task-title ">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="sub-done-task-title">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="sub-done-task-title">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-done -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="task-tilte">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="primary-text-1">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="primary-text-1">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-1 -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-done-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="done-task-title ">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="sub-done-task-title">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="sub-done-task-title">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-done -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="task-tilte">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="primary-text-1">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="primary-text-1">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-1 -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-done-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="done-task-title ">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="sub-done-task-title">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="sub-done-task-title">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-done -->
+
+                    <div class="task-1 flex gap-[10px] items-start  w-full h-[47px] pt-[10px]">
+                        <div class="task-square w-[24px] h-[24px] rounded-[5px]">    
+                        </div>
+                        <div class="text flex flex-col items-start mt-[-5px]">
+                            <h1 class="task-tilte">Update the UI Kit on the project</h1>
+                            <div class="text flex items-center gap-[8px]">
+                                <h1 class="primary-text-1">Design</h1>
+                                <div
+                                class="task-circle w-[11px] h-[11px] rounded-full ">
+                            </div>
+                                <h1 class="primary-text-1">Project</h1>
+                            </div>
+                        </div>
+                    </div> <!-- task-1 -->
+                    
+                </div><!-- tasks -->
+
+            </div><!-- My-tasks -->
+
+
+          
+        </div><!-- Container -->
+
+        
+        <div class="navbar w-full h-[78px] flex mt-[50px] justify-evenly items-center">
+
+            <div class="icon1 flex flex-col items-center gap-[6px]">
+              <svg class="icon-navbar" xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#FF9120"><path
+                  d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" /></svg>
+              <h2 class="navbar-text">Favorite</h2>
+            </div>
+  
+            <div class="icon1 flex flex-col items-center gap-[6px]">
+              <svg class="icon-navbar" xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#FF9120"><path
+                  d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" /></svg>
+              <h2 class="navbar-text">Calendar</h2>
+            </div>
+  
+            <div class="icon3">
+              <div class="plus-icon">
+                <svg class="icon-center" xmlns="http://www.w3.org/2000/svg"
+                  height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#FF9120"><path
+                    d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" /></svg>
+              </div>
+            </div>
+  
+            <div class="icon1 flex flex-col items-center gap-[6px]">
+              <svg class="icon-navbar" xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#FF9120"><path
+                  d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z" /></svg>
+              <h2 class="navbar-text">Notes</h2>
+            </div>
+  
+            <div class="icon1 flex flex-col items-center gap-[6px]">
+              <svg class="icon-navbar" xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="#FF9120"><path
+                  d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" /></svg>
+              <h2 class="navbar-text">Profile</h2>
+            </div>
+  
+          </div><!-- Navbar -->
+
+    </body>
+</html>

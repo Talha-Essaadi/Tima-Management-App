@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+:root {
+
+
+    --White: #FFFFFF;
+    --Secondary-color: #5957D4;
+    --Secondary-text: #54576B;
+    --text-1-color: #A1A6B4;
+    --circle-color: #272D5D;
+    --containers-background: #292B3A;
+    --container-back-inside: #3F4150;
+    --notification-icon: #30354F;
+    --Background-color: #131524;
+    --navbar-background: rgba(2555 ,255 , 255 , 0.14) ;
+      /* --backdrop-filter: 24px ; */
+    --profile-background: #B8DFF2;
+    --plus-icon-color: linear-gradient(45deg , #4D79D6 , #4D79D6);
+    --border-task-color-1: #C0449E;
+    --border-task-color-2: #C04352;
+
+   
+
+
+
+}
+
+/* Text Style */
+
+/* 
+Light = 300 
+Regular = 400
+Medium = 500 
+somi bold = 600 
+*/
+
+
+
+.Primary-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--White);
+}
+
+.task-tilte {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--White);
+}
+
+.primary-text {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--text-1-color);
+}
+
+.primary-text-1 {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--text-1-color);
+}
+
+.done-task-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-1-color);
+    text-decoration: line-through;
+}
+
+
+.sub-done-task-title {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Secondary-text);
+}
+
+.primary-text-white {
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--White);
+}
+
+.text-1-white {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--White);
+   
+}
+
+.navbar-text {
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--White);
+}
+
+.navbar-text-active {
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--Secondary-color);
+}
+
+.task-button {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.see-all-text {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--Secondary-color);
+}
+
+/* text style ^^^^^^^ */
+
+.plus-icnon {
+    width:45px;
+    height:45px;
+    border-radius: 7px;
+    background-image: linear-gradient(45deg , #4D79D6 , #4D79D6);
+    box-shadow: 0px 0px 14px #4E78D4;
+}  
+
+.container-1  {
+    background-color: var(--Background-color);
+    width:100% !important;
+    overflow-x: hidden;
+    min-height: calc(100vh + 800px);
+   
+    
+  
+   
+}
+
+.circle {
+    
+    background-color:var(--Secondary-color) ;
+}
+
+.notification-svg {
+    fill: var(--notification-icon);
+
+}
+
+.search-background {
+    background-color: var(--containers-background);
+}
+
+.search-icon {
+    fill: var(--text-1-color);
+}
+
+.edit-icon {
+    fill: var(--Secondary-color);
+}
+
+.scroll-container-1 {
+    background-color:var(--containers-background);
+}
+
+.Online {
+ background-color:var(--Secondary-color);
+}
+
+.link-1 {
+    background-color: var(--container-back-inside);
+}
+
+.task-circle {
+    background-color: var(--circle-color);
+}
+
+.task-square {
+    background-color: var(--containers-background);
+}
+
+.task-done-square {
+    background-color: var(--Secondary-color);
+}
+
+
+/* navbar >>>>>>>> */
+
+.navbar {
+    position: fixed;
+    bottom: 0px;
+
+    width: 100%;
+    height: 78px;
+    background-color: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+
+
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+
+
+
+
+
+}
+
+.icon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 46px;
+    height: 42px;
+    fill: var(--White);
+
+}
+
+.plus-icon {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 44px;
+    background-image: linear-gradient(to bottom left, #4D79D6, #564BB6);
+    box-shadow: 0px 0px 15px rgba(78, 120, 212, 1);
+    border-radius: 7px;
+    fill: var(--White);
+    margin-top: -25px;
+
+}
+
+.icon3 {
+
+    padding-bottom: 60px;
+    width: 46px;
+    height: 42px;
+
+
+}
+
+.icon-navbar {
+    height: 20px;
+    width: 20px;
+
+    fill: var(--brimary-color);
+
+}
+
+.icon-center {
+    height: 35px;
+    width: 35px;
+
+    fill: var(--brimary-color);
+}
+
+.icon-navbar-active {
+    fill: var(--secondary-color);
+}
+
+
+
+
+
+/* navbar ^^^ */
