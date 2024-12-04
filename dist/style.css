@@ -278,3 +278,13 @@ somi bold = 600
 
 
 /* navbar ^^^ */
+
+.see {
+ display: flex;
+ justify-content: flex-end;
+
+}
+
+.div-test { 
+    background-color: transparent;
+}
