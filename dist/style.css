@@ -135,7 +135,7 @@ somi bold = 600
 }  
 
 .container-1  {
-    background-color: #0B1F28;
+    background-color: black;
     width:100% !important;
     overflow-x: hidden;
     min-height: calc(100vh + 800px);
