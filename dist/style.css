@@ -24,7 +24,7 @@ body {
     --containers-background: #292B3A;
     --container-back-inside: #3F4150;
     --notification-icon: #30354F;
-    --Background-color: #131524;
+    --Background-color: #0B1F28;
     --navbar-background: rgba(2555 ,255 , 255 , 0.14) ;
       /* --backdrop-filter: 24px ; */
     --profile-background: #B8DFF2;
@@ -135,7 +135,7 @@ somi bold = 600
 }  
 
 .container-1  {
-    background-color: #0B1F28;
+    background-color: var(--Background-color);
     width:100% !important;
     overflow-x: hidden;
     min-height: calc(100vh + 800px);
@@ -166,9 +166,14 @@ somi bold = 600
 .edit-icon {
     fill: var(--Secondary-color);
 }
+.scroll {
+   
+    overflow-x: auto;
+}
 
 .scroll-container-1 {
     background-color:var(--containers-background);
+   
 }
 
 .Online {
@@ -193,8 +198,9 @@ somi bold = 600
     gap:10px;
     align-items: start;
     width:100%;
-    height:47px;
+    min-height:47px;
     padding-top:10px;
+   
 }
 .task-done-square {
     background-color: var(--Secondary-color);
@@ -202,7 +208,11 @@ somi bold = 600
     width:24px;
     height:24px;
 }
+.none {
+    display:none;
+}
 .text-task-title {
+    width:100%;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -220,7 +230,9 @@ somi bold = 600
     height:11px;
     border-radius: 100%;
 }
-
+.delete-icon {
+    fill:#b4b4b4;
+}
 
 
 
@@ -358,7 +370,7 @@ somi bold = 600
     justify-content: center;
     align-items: center;
     gap:23px;
-    background-color: #0B1F28;
+    background-color: var(--Background-color);
     padding:0px 15px;
     border-radius: 30px;
    
@@ -396,5 +408,24 @@ somi bold = 600
 
 .cancel-button {
     background-image: linear-gradient(45deg , red , red) !important;
+    box-shadow: none;
+  
     
+}
+
+
+.clear {
+    border-radius: 7px;
+    background-color: red;
+    color:white;
+    
+    width:90px;
+    height:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-nowrap {
+    white-space: nowrap;
 }

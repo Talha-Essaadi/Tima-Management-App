@@ -31,6 +31,23 @@
                     </button>
                 </div>
             </section> <!-- add section -->
+            <section class="add-section w-full update ">
+                <div class="add-container">
+                    <input type="text" id="update-input" class="add-input primary-text-1 rounded-[10px] flex items-center pl-[20px]" placeholder="Update Task">
+                 
+
+                    <button class="add-button-1">
+                      
+                        <div  class="cancel-update  cancel-button  add-button task-tilte" style="background-image: red !important;">
+                            Cancel
+                          </div>
+                          <div id="save" class="add-button updateBotton  task-tilte">
+                            Update
+                          </div>
+                          
+                    </button>
+                </div>
+            </section> <!-- update section -->
             <header class="h-[106px] w-full flex items-center">
                 <div class="left-header w-full flex gap-[16px] items-center ">
                     <img class="w-[55px] h-[55px]"
@@ -213,33 +230,39 @@
             <div class="my-tasks w-full pt-[38px]">
                 <div class="my-tasks-top w-full flex">
                     <div class="my-tasks-title w-full flex items-center gap-[15px]">
-                        <h1 class="Primary-title">My tasks </h1>
-                        <h1 class="see-all-text">16</h1>
+                        <h1 class="Primary-title text-nowrap">My tasks </h1>
+                        <h1 class="see-all-text tasksNumber">0</h1>
+                        <button class="div-test see-all-text clear " >Clear all</button>
                     </div>
+                   
                     <div class="see w-full  ">
-                        <div class="div-test see-all-text ">See all</div>
+                        <div class="div-test see-all-text text-nowrap ">See all</div>
                       
                 </div>
             </div>
 
                 <div class="tasks flex flex-col gap-[13px]">
 
-                    <div class="task-1 ">
+                    <div class="task-1 none">
                         <div class="task-done-square ">
                         </div>
                         <div class="text-task-title">
-                            <h1 class="done-task-title ">Update the UI Kit on the project</h1>
+                            <h1 class="done-task-title update">Update the UI Kit on the project</h1>
                             <div class="text-gategory  ">
                                 <h1 class="sub-done-task-title">Design</h1>
                                 <div class="task-circle ">
                                 </div>
                                 <h1 class="sub-done-task-title">Project</h1>
+                                <button class="delete-div">
+                                <svg class="delete-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1b1e3f"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                                <button>
                             </div>
+
                         </div>
                     </div> <!-- task-done -->
                   
 
-                    <div class="task-1 ">
+                    <div class="task-1 none ">
                         <div class="task-square ">    
                         </div>
                         <div class="text-task-title">
@@ -324,6 +347,6 @@
             </div>
   
           </div><!-- Navbar -->
-<script src="javascript.js"></script>
+<script id="link" src="javascript.js"></script>
     </body>
 </html>

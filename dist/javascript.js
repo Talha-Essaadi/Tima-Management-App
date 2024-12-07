@@ -43,12 +43,25 @@ let trucking = 0;
 //localStorage.clear() 
 
 function putlink() {
-    //const link = docuument.getElementById("link");
-    // link.setAttribute("src","edit2.js");
+   // const link = docuument.querySelector("#link") ;
+    // link.setAttribute("src","js1.js");
     window.location.reload();
 }
 
+const clear = document.querySelector(".clear");
+clear.addEventListener("click", function () {
+    localStorage.clear();
+    putlink();
+})
 
+function tasksNumber () {
+    let value = localStorage.length ;
+    const tasksNumber = document.querySelector(".tasksNumber"); 
+    
+    tasksNumber.textContent = value;
+    //alert(value);
+}
+tasksNumber () ;
 function getLocalKey() {
     for (let i = 0; i < localStorage.length; i++) {
 
@@ -113,7 +126,45 @@ for (let i = 0; i < tasksKey.length; i++) {
     subDone2.textContent = "Project";
 
     ////////////
+    const deleteButton = document.createElement("button");
+    deleteButton.setAttribute("class", "delete-div");
+ 
+
+    //99999999999999999999999999999999999
+   
+    const svgNS = "http://www.w3.org/2000/svg";
+
+
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("class", "delete-icon");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svg.setAttribute("height", "24px");
+    svg.setAttribute("viewBox", "0 -960 960 960");
+    svg.setAttribute("width", "24px");
+    svg.setAttribute("fill", "#1b1e3f");
+
+
+    const path = document.createElementNS(svgNS, "path");
+    path.setAttribute("d", "M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z");
+
+  
+    svg.appendChild(path);
+
+   
+    deleteButton.appendChild(svg);
+    ///////////////////////////////
+    ////////////////////////
     //const complete = document.createElement("button");
+    deleteButton.addEventListener("click", function () {
+        tasksContainers.removeChild(newTask);
+        // localStorage.removeItem(?);
+        let truck = newTask.getAttribute("id");
+        localStorage.removeItem(truck);
+        window.location.reload();
+        
+
+
+    });
     //complete.textContent = "complete";
     //complete.classList.add("button");
     doneSquare.addEventListener("click", function () {
@@ -131,7 +182,34 @@ for (let i = 0; i < tasksKey.length; i++) {
         //  alert(keyValue);
     });
 
-    //////////// Complete ^^^^^^^
+    //////////// Complete >>>>>>>>>
+    span.addEventListener("click", function () {
+       
+        const update = document.querySelector(".update");
+        update.style.display = "flex";
+        
+        const updateInput = document.getElementById("update-input");
+        const save = document.getElementById("save");
+         save.addEventListener("click", function  () {
+       
+            let value = updateInput.value ;
+            let truck = newTask.getAttribute("id")
+            localStorage.setItem(truck,value);
+            update.style.display = "none";
+            window.location.reload();
+            
+              
+        })
+          
+       const cancelButton = document.querySelector(".cancel-update");
+       cancelButton.addEventListener("click", function () {
+        update.style.display = "none";
+       })
+    });
+
+  
+
+    ///// Update ^^^^^^^
 
 
 
@@ -139,6 +217,7 @@ for (let i = 0; i < tasksKey.length; i++) {
     textGategory.appendChild(subDone1);
     textGategory.appendChild(circle);
     textGategory.appendChild(subDone2);
+    textGategory.appendChild(deleteButton);
 
     textTask.appendChild(span);
     textTask.appendChild(textGategory);
@@ -204,9 +283,45 @@ for (let i = 0; i < completeTasks.length; i++) {
     const subDone2 = document.createElement("h1");
     subDone2.setAttribute("class", "sub-done-task-title");
     subDone2.textContent = "Project";
-    ///////////88888888888888888
+    ///////////999999999999
+    const deleteButton = document.createElement("button");
+    deleteButton.setAttribute("class", "delete-div");
+ 
+
+    //99999999999999999999999999999999999
+   
+    const svgNS = "http://www.w3.org/2000/svg";
+
+
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("class", "delete-icon");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svg.setAttribute("height", "24px");
+    svg.setAttribute("viewBox", "0 -960 960 960");
+    svg.setAttribute("width", "24px");
+    svg.setAttribute("fill", "#1b1e3f");
+
+
+    const path = document.createElementNS(svgNS, "path");
+    path.setAttribute("d", "M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z");
+
+  
+    svg.appendChild(path);
+
+   
+    deleteButton.appendChild(svg);
     ////////////
     //const complete = document.createElement("button");
+    deleteButton.addEventListener("click", function () {
+        tasksContainers.removeChild(newTask);
+        // localStorage.removeItem(?);
+        let truck = newTask.getAttribute("id");
+        localStorage.removeItem(truck);
+        window.location.reload();
+        
+
+
+    });
     // complete.textContent = "complete";
     // complete.classList.add("button");
 
@@ -230,9 +345,36 @@ for (let i = 0; i < completeTasks.length; i++) {
 
     //////////// Complete ^^^^^^^
 
+
     ///////////
 
+  span.addEventListener("click", function () {
+       
+        const update = document.querySelector(".update");
+        update.style.display = "flex";
+        
+        const updateInput = document.getElementById("update-input");
+        const save = document.getElementById("save");
+         save.addEventListener("click", function  () {
+       
+            let value = updateInput.value ;
+            let truck = newTask.getAttribute("id")
+            localStorage.setItem(truck,value);
+            update.style.display = "none";
+            window.location.reload();
+            
+              
+        })
+          
+       const cancelButton = document.querySelector(".cancel-update");
+       cancelButton.addEventListener("click", function () {
+        update.style.display = "none";
+       })
+    });
 
+  
+
+    ///// Update ^^^^^^^
     ///// Update ^^^^^^^
 
 
@@ -241,6 +383,7 @@ for (let i = 0; i < completeTasks.length; i++) {
     textGategory.appendChild(subDone1);
     textGategory.appendChild(circle);
     textGategory.appendChild(subDone2);
+    textGategory.appendChild(deleteButton);
 
     textTask.appendChild(span);
     textTask.appendChild(textGategory);
@@ -331,18 +474,59 @@ function createTask() {
     subDone2.setAttribute("class", "primary-text-1");
     subDone2.textContent = "Project";
 
+
+    const deleteButton = document.createElement("button");
+    deleteButton.setAttribute("class", "delete-div");
+ 
+
+    //99999999999999999999999999999999999
+   
+    const svgNS = "http://www.w3.org/2000/svg";
+
+
+    const svg = document.createElementNS(svgNS, "svg");
+    svg.setAttribute("class", "delete-icon");
+    svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    svg.setAttribute("height", "24px");
+    svg.setAttribute("viewBox", "0 -960 960 960");
+    svg.setAttribute("width", "24px");
+    svg.setAttribute("fill", "#1b1e3f");
+
+
+    const path = document.createElementNS(svgNS, "path");
+    path.setAttribute("d", "M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z");
+
+  
+    svg.appendChild(path);
+
+   
+    deleteButton.appendChild(svg);
+
     /////////////////////////////////////
     ////////////////////////////////////////
     ////////////
-    //  const complete = document.createElement("button");
-    // complete.textContent = "complete";
-    //  complete.classList.add("button");
+
+    // delete
+
+      
+  
+    
+    deleteButton.addEventListener("click", function () {
+        tasksContainers.removeChild(newTask);
+        // localStorage.removeItem(?);
+        let truck = newTask.getAttribute("id");
+        localStorage.removeItem(truck);
+        window.location.reload();
+        
+
+
+    });
+
+
+    //////////////////////// complete >>>>>>
     doneSquare.addEventListener("click", function () {
         span.setAttribute("class", "task-tilte");
         doneSquare.setAttribute("class", "task-square");
-
-
-
 
         let truck = newTask.getAttribute("id");
         let keyValue = localStorage.getItem(truck);
@@ -355,9 +539,39 @@ function createTask() {
 
     //////////// Complete ^^^^^^^
 
-    //////////  >>>>>>>>
 
-    //////////// ^^^^^^^
+    //////////  >>>>>>>> update 
+
+  //  const UpdateButton = document.createElement("button");
+   // UpdateButton.textContent = "Update";
+  //  UpdateButton.classList.add("button");
+    span.addEventListener("click", function () {
+       
+        const update = document.querySelector(".update");
+        update.style.display = "flex";
+        
+        const updateInput = document.getElementById("update-input");
+        const save = document.getElementById("save");
+         save.addEventListener("click", function  () {
+       
+            let value = updateInput.value ;
+            let truck = newTask.getAttribute("id")
+            localStorage.setItem(truck,value);
+            update.style.display = "none";
+            window.location.reload();
+            
+              
+        })
+          
+       const cancelButton = document.querySelector(".cancel-update");
+       cancelButton.addEventListener("click", function () {
+        update.style.display = "none";
+       })
+    });
+
+  
+
+    ///// Update ^^^^^^^
 
 
 
@@ -365,6 +579,7 @@ function createTask() {
     textGategory.appendChild(subDone1);
     textGategory.appendChild(circle);
     textGategory.appendChild(subDone2);
+    textGategory.appendChild(deleteButton);
 
     textTask.appendChild(span);
     textTask.appendChild(textGategory);
@@ -382,6 +597,7 @@ function createTask() {
 
     input.value = "";
     getLocalKey();
+    tasksNumber () ;
 }
 
 
