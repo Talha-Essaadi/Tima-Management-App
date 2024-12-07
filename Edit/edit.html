@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edit.css">
+   
+    <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body>
+    <div class="container">
+        <div class="div-1">
+            <h2 id="h2" class="text">Do you want to create Task ?</h2>
+            <div class="back-btn">
+                <input id="input" type="text" placeholder="Add task">
+
+                <button id="add" class="button">Add</button>         
+           </div>
+        </div>
+        <div class="update">
+        <div class="div-2">
+            <h2 id="h2" class="text">pdate Task :</h2>
+            <div class="update-btn">
+                <input id="update-input" type="text" placeholder="Edit task">
+
+                <button id="save" class="button">Save</button> 
+                <button id="cancel" class="button">cancel</button> 
+
+           </div>
+        </div>
+
+      </div>
+        <div class="my-tasks w-full pt-[38px]">
+            <div class="my-tasks-top w-full flex">
+                <div class="my-tasks-title w-full flex items-center gap-[15px]">
+                    <h1 class="Primary-title collor">My tasks </h1>
+                    <h1 class="see-all-text">16</h1>
+                </div>
+                <div class="see w-full  ">
+                    <div class="div-test see-all-text ">See all</div>
+                  
+            </div>
+        </div>
+
+            <div id="tasks" class="tasks flex flex-col gap-[13px]">
+                <ul id="tasksContainers"></ul>
+<!--
+                <button id="delete" class="button">delete</button>
+                <button id="save" class="button">Save</button>
+
+   -->        
+
+                
+            </div><!-- tasks -->
+
+        </div><!-- My-tasks -->
+
+    </div> <!-- Container -->
+    <script id="link" src="edit2.js"></script>
+</body>
+</html>

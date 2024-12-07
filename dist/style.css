@@ -135,7 +135,7 @@ somi bold = 600
 }  
 
 .container-1  {
-    background-color: var(--Background-color);
+    background-color: #0B1F28;
     width:100% !important;
     overflow-x: hidden;
     min-height: calc(100vh + 800px);
@@ -179,23 +179,58 @@ somi bold = 600
     background-color: var(--container-back-inside);
 }
 
-.task-circle {
-    background-color: var(--circle-color);
-}
+
 
 .task-square {
     background-color: var(--containers-background);
+    border-radius: 5px;
+    width:24px;
+    height:24px;
 }
 
+.task-1 {
+    display: flex;
+    gap:10px;
+    align-items: start;
+    width:100%;
+    height:47px;
+    padding-top:10px;
+}
 .task-done-square {
     background-color: var(--Secondary-color);
+    border-radius: 5px;
+    width:24px;
+    height:24px;
 }
+.text-task-title {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: -5px;
+}
+.text-gategory {
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.task-circle {
+    background-color: var(--circle-color);
+    width:11px;
+    height:11px;
+    border-radius: 100%;
+}
+
+
+
+
 
 
 /* navbar >>>>>>>> */
 
 .navbar {
     position: fixed;
+    z-index: 999;
     bottom: 0px;
 
     width: 100%;
@@ -287,4 +322,79 @@ somi bold = 600
 
 .div-test { 
     background-color: transparent;
+}
+
+
+
+.add-section {
+    position:fixed;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right :0px;
+    min-height :100vh;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(10px);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0px 15px;
+    z-index: 1;
+   
+    display: none;
+  
+
+}
+
+.add-container {
+    border:1px solid var(--Secondary-color);
+    height :250px;
+    width:100%;
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:23px;
+    background-color: #0B1F28;
+    padding:0px 15px;
+    border-radius: 30px;
+   
+}
+
+.add-input {
+  
+
+    background-color: var(--containers-background);
+    height:50px !important;
+    width:100%;
+   
+}
+
+.add-button-1 {
+    width:100%;
+    display:flex;
+    padding-top: 10px;
+    justify-content: end;
+    align-items: center;
+    gap:30px;
+}
+
+
+.add-button {
+    border-radius: 7px;
+    background-image: linear-gradient(45deg , #4D79D6 , #4D79D6);
+    box-shadow: 0px 0px 14px #4E78D4;
+    width:100px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel-button {
+    background-image: linear-gradient(45deg , red , red) !important;
+    
 }
